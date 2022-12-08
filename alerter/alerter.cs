@@ -5,7 +5,7 @@ namespace AlerterSpace {
     public partial class Alerter {
         static int alertFailureCount = 0;
 
-        public virtual int networkAlertnetworkAlertStub(float celcius)
+        public virtual int networkAlertStub(float celcius)
         {
             Console.WriteLine("ALERT: Temperature is {0} celcius", celcius);
             // Return 200 for ok
@@ -29,11 +29,6 @@ namespace AlerterSpace {
         }
         static void Main(string[] args) {
             aleter_UnitTest.Test_AlerterCelcius_FailureCase();
-           // alertInCelcius(400.5f);
-           // alertInCelcius(303.6f);
-           // Debug.Assert(alertFailureCount == 1);
-           // Console.WriteLine("{0} alerts failed.", alertFailureCount);
-           // Console.WriteLine("All is well (maybe!)\n");
         }
     }
 }
