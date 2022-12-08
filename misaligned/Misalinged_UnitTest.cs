@@ -8,7 +8,7 @@ namespace MisalignedSpace
         public static void Test_printColorMap_SuccessCase()
         {
             //Arrange & Act & Assert
-            string result = Misaligned.formatColorPair(1, 2);
+            //string result = Misaligned.formatColorPair(1, 2);
             int result = Misaligned.printColorMap();
             Debug.Assert(result == 25);
             Debug.Assert(Misaligned.formatColorPair(1, 1) == "7  | Red | Orange");

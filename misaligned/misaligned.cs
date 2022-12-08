@@ -3,10 +3,10 @@ using System.Diagnostics;
 
 namespace MisalignedSpace {
     public partial class Misaligned {
-      string[] majorColors = { "White", "Red", "Black", "Yellow", "Violet" };
-        string[] minorColors = { "Blue", "Orange", "Green", "Brown", "Slate" };
+        public static string[] majorColors = { "White", "Red", "Black", "Yellow", "Violet" };
+        public static string[] minorColors = { "Blue", "Orange", "Green", "Brown", "Slate" };
 
-        static int printColorMap()
+        public static int printColorMap()
         {
             int i = 0, j = 0;
             for (i = 0; i < 5; i++)
@@ -23,11 +23,11 @@ namespace MisalignedSpace {
             string colorpair;
             if (i * 5 + j + 1 < 10)
             {
-                colorpair = String.Format("{0}  | {1} | {2}", i * 5 + j + 1, majorColors[i], minorColors[j]);
+                colorpair = String.Format("{0}  | {1} | {2}", i * 5 + j + 1, Misaligned.majorColors[i], Misaligned.minorColors[j]);
             }
             else
             {
-                colorpair = String.Format("{0} | {1} | {2}", i * 5 + j + 1, majorColors[i], minorColors[j]);
+                colorpair = String.Format("{0} | {1} | {2}", i * 5 + j + 1, Misaligned.majorColors[i], Misaligned.minorColors[j]);
             }
             return colorpair;
         }
@@ -42,7 +42,7 @@ namespace MisalignedSpace {
 		public static void Test_printColorMap_SuccessCase()
 		{
 			//Arrange & Act & Assert
-			string result = Misaligned.formatColorPair(1,2);
+			//string result = Misaligned.formatColorPair(1,2);
         int result = Misaligned.printColorMap();
         Debug.Assert(result == 25);
         Debug.Assert(Misaligned.formatColorPair(1, 1) == "7  | Red | Orange");
