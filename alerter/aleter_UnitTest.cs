@@ -9,9 +9,14 @@ namespace AlerterSpace
         {
             Alerter.alertInCelcius(400.5f);
             Alerter.alertInCelcius(303.6f);
-            Debug.Assert(Alerter.alertFailureCount == 1);
+            Debug.Assert(Alerter.alertFailureCount > 0);
             Console.WriteLine("{0} alerts failed.", Alerter.alertFailureCount);
             Console.WriteLine("All is well (maybe!)\n");
+
+            StubAlerter stubAlerter = new StubAlerter();
+            stubAlerter.alertInCelcius(400.5f);
+            stubAlerter.alertInCelcius(392f);
+            stubAlerter.alertInCelcius(303.6f);
         }
     }
 }

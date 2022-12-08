@@ -13,6 +13,8 @@ namespace TshirtSpace {
 			Debug.Assert(Tshirt.Size(43) == "L");
 			Debug.Assert(Tshirt.Size(38) == "S");
 			Debug.Assert(Tshirt.Size(42) == "L");
+			Debug.Assert(Tshirt.Size(44) == "L");
+			Debug.Assert(Tshirt.Size(45) == "Size Not Available Please try other size.");
 			Console.WriteLine("All is well (maybe!)");
 		}
 	}
