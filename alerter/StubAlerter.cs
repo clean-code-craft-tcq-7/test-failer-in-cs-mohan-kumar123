@@ -1,10 +1,10 @@
 using System;
 using System.Diagnostics;
-using static Alerter;
+using static AlerterSpace.Alerter;
 
 namespace AlerterSpace
 {
-    public class StubAlerter : alerter
+    public class StubAlerter : Alerter
     {
         public override int networkAlertStub(float celcius)
         {
