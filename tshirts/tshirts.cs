@@ -13,6 +13,8 @@ namespace TshirtSpace {
             }
         }
         static void Main(string[] args) {
+            Tshirt_Test Tshirt_Test = new Tshirt_Test();
+            Tshirt_Test.Test_TshirtSize_SuccessCase();
             Debug.Assert(Size(38) == "S");
             Debug.Assert(Size(42) == "M");
             Debug.Assert(Size(41) == "L");
