@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Diagnostics;
-using TshirtSpace.Tshirt_Test;
 
 namespace TshirtSpace {
     class Tshirt {
