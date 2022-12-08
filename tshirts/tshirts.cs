@@ -2,7 +2,7 @@
 using System.Diagnostics;
 
 namespace TshirtSpace {
-    class Tshirt {
+    public class Tshirt {
         static string Size(int cms) {
             if(cms < 38) {
                 return "S";
@@ -24,7 +24,7 @@ namespace TshirtSpace {
 
     public class Tshirt_Test
 	{
-		public int Test_TshirtSize_SuccessCase()
+		public void Test_TshirtSize_SuccessCase()
 		{
 			//Arrange & Act & Assert
 			Debug.Assert(Tshirt.Size(37) == "S");
