@@ -1,6 +1,6 @@
 using System;
 using System.Diagnostics;
-using AlerterSpace.Alerter;
+using static AlerterSpace.Alerter;
 
 namespace AlerterSpace
 {
