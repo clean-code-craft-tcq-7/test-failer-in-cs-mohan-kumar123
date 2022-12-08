@@ -6,7 +6,7 @@ namespace AlerterSpace
 {
     public class StubAlerter : Alerter
     {
-        public override int networkAlertStub(float celcius)
+        public override int networkAlert(float celcius)
         {
             Console.WriteLine("ALERT: Temperature is {0} celcius", celcius);
             Console.WriteLine("code executed in stub level.....");

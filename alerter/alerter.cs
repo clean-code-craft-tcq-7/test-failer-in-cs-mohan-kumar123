@@ -5,7 +5,7 @@ namespace AlerterSpace {
     public partial class Alerter {
        public static int alertFailureCount = 0;
 
-        public virtual int networkAlertStub(float celcius)
+        public virtual int networkAlert(float celcius)
         {
             Console.WriteLine("ALERT: Temperature is {0} celcius", celcius);
             // Return 200 for ok
@@ -19,7 +19,7 @@ namespace AlerterSpace {
         {
             Alerter alerter =  new Alerter();
             float celcius = (farenheit - 32) * 5 / 9;
-            int returnCode = alerter.networkAlertStub(celcius);
+            int returnCode = alerter.networkAlert(celcius);
             if (returnCode != 200) {
                 // non-ok response is not an error! Issues happen in life!
                 // let us keep a count of failures to report
