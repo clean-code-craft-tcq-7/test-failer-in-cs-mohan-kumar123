@@ -2,7 +2,7 @@
 using System.Diagnostics;
 
 namespace TshirtSpace {
-    public class Tshirt {
+    public partial class Tshirt {
         public static string Size(int cms) {
             if(cms < 38) {
                 return "S";
@@ -13,8 +13,9 @@ namespace TshirtSpace {
             }
         }
         static void Main(string[] args) {
-            Tshirt_Test tshirt_Test = new Tshirt_Test();
-            tshirt_Test.Test_TshirtSize_SuccessCase();
+            tshirt_UnitTest.Test_TshirtSize_SuccessCase();
+             // Tshirt_Test tshirt_Test = new Tshirt_Test();
+            //tshirt_Test.Test_TshirtSize_SuccessCase();
         }
     }
 

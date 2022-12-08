@@ -13,7 +13,7 @@ namespace MisalignedSpace {
             {
                 for (j = 0; j < 5; j++)
                 {
-                    Console.WriteLine(formatColorPair(i, j));
+                    Console.WriteLine(formatColorPair(i, i));
                 }
             }
             return i * j;
